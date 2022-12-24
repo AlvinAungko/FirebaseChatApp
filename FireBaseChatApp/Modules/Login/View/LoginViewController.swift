@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginViewController: BaseViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var welcomeLabel: UILabel!
@@ -51,6 +51,13 @@ class LoginViewController: BaseViewController {
         registerButton.buttonStyle = .plain
         registerButton.setTitle("If You Don't have Account, Register Here", for: .normal)
         
+        registerButton.addTarget(self, action: #selector(handleRegisterAction), for: .touchUpInside)
+        
     }
-
+    
+    @objc func handleRegisterAction() {
+        let vc = RegisterViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
