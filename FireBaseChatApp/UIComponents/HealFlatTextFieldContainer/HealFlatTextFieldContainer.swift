@@ -18,7 +18,7 @@ class HealFlatTextFieldContainer: BaseCustomView {
     @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var inputTextField: UITextField!
     
-//    weak var cpvTextField: CountryPickerView!
+    //    weak var cpvTextField: CountryPickerView!
     
     var datePicker: UIDatePicker?
     
@@ -107,12 +107,13 @@ class HealFlatTextFieldContainer: BaseCustomView {
         inputTextField.delegate = self
     }
     
-    private func configureTextFieldAttributes(_ inputType: InputType, stringArr: [String]) {
+     func configureTextFieldAttributes(_ inputType: InputType, stringArr: [String]? = []) {
         switch inputType {
         case .general:
             inputTextField.autocorrectionType = .yes
         case .email:
             inputTextField.keyboardType = .emailAddress
+            inputTextField.placeholder = "Email"
         case .phone:
             inputTextField.keyboardType = .phonePad
             inputTextField.delegate = self
@@ -137,25 +138,25 @@ class HealFlatTextFieldContainer: BaseCustomView {
             configurePicker(textField: inputTextField)
         case .nationality:
             inputTextField.resignFirstResponder()
-            pickerList = stringArr
+            pickerList = stringArr ?? []
             configurePicker(textField: inputTextField)
         case .country:
             inputTextField.resignFirstResponder()
-            pickerList = stringArr
+            pickerList = stringArr ?? []
             configurePicker(textField: inputTextField)
         case .state:
             inputTextField.resignFirstResponder()
-            pickerList = stringArr
+            pickerList = stringArr ?? []
             inputTextField.isUserInteractionEnabled = !pickerList.isEmpty
             configurePicker(textField: inputTextField)
         case .city:
             inputTextField.resignFirstResponder()
-            pickerList = stringArr
+            pickerList = stringArr ?? []
             inputTextField.isUserInteractionEnabled = !pickerList.isEmpty
             configurePicker(textField: inputTextField)
         case .township:
             inputTextField.resignFirstResponder()
-            pickerList = stringArr
+            pickerList = stringArr ?? []
             inputTextField.isUserInteractionEnabled = !pickerList.isEmpty
             configurePicker(textField: inputTextField)
         case .idType:
@@ -273,27 +274,27 @@ class HealFlatTextFieldContainer: BaseCustomView {
     }
     
     private func configureCountryPicker() {
-//        let cp = CountryPickerView()
-//        let dropDown = UIImageView(image: UIImage(named: "Dropdown"))
-//        let stackView = UIStackView(arrangedSubviews: [cp, dropDown])
-//        dropDown.contentMode = .center
-//        dropDown.widthAnchor.constraint(equalToConstant: 30).isActive = true
-//        dropDown.heightAnchor.constraint(equalToConstant: 20).isActive = true
-//        
-//        var leftView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: inputTextField.frame.height))
-//        leftView = stackView
-//        
-//        cp.setCountryByCode("MM")
-//        cp.setCountryByPhoneCode("+95")
-//        
-//        inputTextField.leftView = leftView
-//        inputTextField.leftViewMode = .always
-//        cpvTextField = cp
-//        
-//        cpvTextField.showCountryCodeInView = false
-//        cpvTextField.dataSource = self
-//        cpvTextField.delegate = self
-//        cpvTextField.font = .museoSans500(ofSize: 14)
+        //        let cp = CountryPickerView()
+        //        let dropDown = UIImageView(image: UIImage(named: "Dropdown"))
+        //        let stackView = UIStackView(arrangedSubviews: [cp, dropDown])
+        //        dropDown.contentMode = .center
+        //        dropDown.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        //        dropDown.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        //
+        //        var leftView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: inputTextField.frame.height))
+        //        leftView = stackView
+        //
+        //        cp.setCountryByCode("MM")
+        //        cp.setCountryByPhoneCode("+95")
+        //
+        //        inputTextField.leftView = leftView
+        //        inputTextField.leftViewMode = .always
+        //        cpvTextField = cp
+        //
+        //        cpvTextField.showCountryCodeInView = false
+        //        cpvTextField.dataSource = self
+        //        cpvTextField.delegate = self
+        //        cpvTextField.font = .museoSans500(ofSize: 14)
     }
     
     private func configurePicker(textField: UITextField) {

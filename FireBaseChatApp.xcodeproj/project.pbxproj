@@ -30,6 +30,13 @@
 		E14C0F2F2957525800D69ECD /* AllExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C0F2E2957525800D69ECD /* AllExtensions.swift */; };
 		E14C0F33295753E200D69ECD /* Date + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C0F31295753E200D69ECD /* Date + Extension.swift */; };
 		E14C0F34295753E200D69ECD /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C0F32295753E200D69ECD /* String + Extension.swift */; };
+		E14C0F3B2957691700D69ECD /* MuseoSans-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = E14C0F372957691700D69ECD /* MuseoSans-300.otf */; };
+		E14C0F3C2957691700D69ECD /* MuseoSans-100.otf in Resources */ = {isa = PBXBuildFile; fileRef = E14C0F382957691700D69ECD /* MuseoSans-100.otf */; };
+		E14C0F3D2957691700D69ECD /* MuseoSans-500.otf in Resources */ = {isa = PBXBuildFile; fileRef = E14C0F392957691700D69ECD /* MuseoSans-500.otf */; };
+		E14C0F3E2957691700D69ECD /* MuseoSans-700.otf in Resources */ = {isa = PBXBuildFile; fileRef = E14C0F3A2957691700D69ECD /* MuseoSans-700.otf */; };
+		E14C0F4229576BE000D69ECD /* HealPlainTextFieldContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14C0F4029576BE000D69ECD /* HealPlainTextFieldContainer.xib */; };
+		E14C0F4329576BE000D69ECD /* HealPlainTextFieldContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C0F4129576BE000D69ECD /* HealPlainTextFieldContainer.swift */; };
+		E14C0F4629576C0A00D69ECD /* HealPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C0F4529576C0A00D69ECD /* HealPrimaryButton.swift */; };
 		E19DE1DA29501967003A43F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DE1D929501967003A43F2 /* AppDelegate.swift */; };
 		E19DE1E329501968003A43F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19DE1E229501968003A43F2 /* Assets.xcassets */; };
 		E19DE1E629501968003A43F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19DE1E429501968003A43F2 /* LaunchScreen.storyboard */; };
@@ -61,6 +68,13 @@
 		E14C0F2E2957525800D69ECD /* AllExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllExtensions.swift; sourceTree = "<group>"; };
 		E14C0F31295753E200D69ECD /* Date + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date + Extension.swift"; sourceTree = "<group>"; };
 		E14C0F32295753E200D69ECD /* String + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		E14C0F372957691700D69ECD /* MuseoSans-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300.otf"; sourceTree = "<group>"; };
+		E14C0F382957691700D69ECD /* MuseoSans-100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100.otf"; sourceTree = "<group>"; };
+		E14C0F392957691700D69ECD /* MuseoSans-500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-500.otf"; sourceTree = "<group>"; };
+		E14C0F3A2957691700D69ECD /* MuseoSans-700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-700.otf"; sourceTree = "<group>"; };
+		E14C0F4029576BE000D69ECD /* HealPlainTextFieldContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HealPlainTextFieldContainer.xib; sourceTree = "<group>"; };
+		E14C0F4129576BE000D69ECD /* HealPlainTextFieldContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealPlainTextFieldContainer.swift; sourceTree = "<group>"; };
+		E14C0F4529576C0A00D69ECD /* HealPrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealPrimaryButton.swift; sourceTree = "<group>"; };
 		E19DE1D629501967003A43F2 /* FireBaseChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBaseChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19DE1D929501967003A43F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19DE1E229501968003A43F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +114,6 @@
 		E14C0EF629573E5800D69ECD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E14C0F19295747FF00D69ECD /* UIComponents */,
 				E14C0EFF29573EB600D69ECD /* Base */,
 				E14C0EF829573E7D00D69ECD /* Login */,
 				E14C0EF929573E8500D69ECD /* Register */,
@@ -201,6 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				E14C0F252957501B00D69ECD /* BaseView */,
+				E14C0F3F29576BE000D69ECD /* HealPlainTextFieldContainer */,
+				E14C0F4429576C0A00D69ECD /* HealPrimaryButton */,
 				E14C0F1A2957489B00D69ECD /* HealFlatTextFieldContainer */,
 			);
 			path = UIComponents;
@@ -266,6 +281,43 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		E14C0F352957690500D69ECD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E14C0F362957691700D69ECD /* Fonts */,
+				E19DE1E229501968003A43F2 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E14C0F362957691700D69ECD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E14C0F372957691700D69ECD /* MuseoSans-300.otf */,
+				E14C0F382957691700D69ECD /* MuseoSans-100.otf */,
+				E14C0F392957691700D69ECD /* MuseoSans-500.otf */,
+				E14C0F3A2957691700D69ECD /* MuseoSans-700.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E14C0F3F29576BE000D69ECD /* HealPlainTextFieldContainer */ = {
+			isa = PBXGroup;
+			children = (
+				E14C0F4029576BE000D69ECD /* HealPlainTextFieldContainer.xib */,
+				E14C0F4129576BE000D69ECD /* HealPlainTextFieldContainer.swift */,
+			);
+			path = HealPlainTextFieldContainer;
+			sourceTree = "<group>";
+		};
+		E14C0F4429576C0A00D69ECD /* HealPrimaryButton */ = {
+			isa = PBXGroup;
+			children = (
+				E14C0F4529576C0A00D69ECD /* HealPrimaryButton.swift */,
+			);
+			path = HealPrimaryButton;
+			sourceTree = "<group>";
+		};
 		E19DE1CD29501967003A43F2 = {
 			isa = PBXGroup;
 			children = (
@@ -291,9 +343,10 @@
 				E14C0F2229574E7C00D69ECD /* Enum */,
 				E14C0F0D295742D600D69ECD /* Extension */,
 				E14C0F0C2957427200D69ECD /* Model */,
+				E14C0F19295747FF00D69ECD /* UIComponents */,
 				E14C0EF629573E5800D69ECD /* Modules */,
+				E14C0F352957690500D69ECD /* SupportingFiles */,
 				E19DE1D929501967003A43F2 /* AppDelegate.swift */,
-				E19DE1E229501968003A43F2 /* Assets.xcassets */,
 				E19DE1E429501968003A43F2 /* LaunchScreen.storyboard */,
 				E19DE1E729501968003A43F2 /* Info.plist */,
 			);
@@ -361,13 +414,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E14C0F0629573F6600D69ECD /* BaseTableViewCell.xib in Resources */,
+				E14C0F4229576BE000D69ECD /* HealPlainTextFieldContainer.xib in Resources */,
 				E14C0EFD29573EAA00D69ECD /* ChatConversationViewController.xib in Resources */,
+				E14C0F3E2957691700D69ECD /* MuseoSans-700.otf in Resources */,
 				E14C0F182957452D00D69ECD /* RegisterViewController.xib in Resources */,
 				E14C0F132957450900D69ECD /* LoginViewController.xib in Resources */,
 				E14C0F202957489B00D69ECD /* HealFlatTextFieldContainer.xib in Resources */,
 				E19DE1E629501968003A43F2 /* LaunchScreen.storyboard in Resources */,
 				E14C0F0A295740CA00D69ECD /* BaseCollectionViewCell.xib in Resources */,
 				E19DE1E329501968003A43F2 /* Assets.xcassets in Resources */,
+				E14C0F3D2957691700D69ECD /* MuseoSans-500.otf in Resources */,
+				E14C0F3C2957691700D69ECD /* MuseoSans-100.otf in Resources */,
+				E14C0F3B2957691700D69ECD /* MuseoSans-300.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,10 +484,12 @@
 				E14C0F2F2957525800D69ECD /* AllExtensions.swift in Sources */,
 				E14C0F1F2957489B00D69ECD /* HealFlatTextFieldContainer.swift in Sources */,
 				E14C0F2C295751B900D69ECD /* AppColors.swift in Sources */,
+				E14C0F4629576C0A00D69ECD /* HealPrimaryButton.swift in Sources */,
 				E14C0F272957503200D69ECD /* BaseCustomView.swift in Sources */,
 				E14C0F33295753E200D69ECD /* Date + Extension.swift in Sources */,
 				E14C0F09295740CA00D69ECD /* BaseCollectionViewCell.swift in Sources */,
 				E14C0F0F2957434100D69ECD /* Extensions+UITableView.swift in Sources */,
+				E14C0F4329576BE000D69ECD /* HealPlainTextFieldContainer.swift in Sources */,
 				E14C0F172957452D00D69ECD /* RegisterViewController.swift in Sources */,
 				E14C0F0529573F6600D69ECD /* BaseTableViewCell.swift in Sources */,
 				E19DE1DA29501967003A43F2 /* AppDelegate.swift in Sources */,

@@ -20,6 +20,7 @@ class BaseCustomView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        commonInit()
     }
     
     override func prepareForInterfaceBuilder() {

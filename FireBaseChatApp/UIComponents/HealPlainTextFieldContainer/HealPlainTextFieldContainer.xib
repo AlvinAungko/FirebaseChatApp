@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HealPlainTextFieldContainer" customModule="heal_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="containerTextField" destination="BPU-oi-dIK" id="0vn-Zd-cpk"/>
+                <outlet property="containerView" destination="VXV-lF-uFa" id="NVV-Pu-QFQ"/>
+                <outlet property="inputTextField" destination="5HE-gk-btN" id="rix-9l-k5q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VXV-lF-uFa">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPU-oi-dIK">
+                    <rect key="frame" x="0.0" y="10" width="414" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5HE-gk-btN">
+                            <rect key="frame" x="15" y="10" width="384" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5HE-gk-btN" secondAttribute="bottom" constant="10" id="Nr6-tP-VGp"/>
+                        <constraint firstItem="5HE-gk-btN" firstAttribute="leading" secondItem="BPU-oi-dIK" secondAttribute="leading" constant="15" id="fOx-7J-qiH"/>
+                        <constraint firstAttribute="trailing" secondItem="5HE-gk-btN" secondAttribute="trailing" constant="15" id="hUn-NV-whY"/>
+                        <constraint firstItem="5HE-gk-btN" firstAttribute="top" secondItem="BPU-oi-dIK" secondAttribute="top" constant="10" id="mJB-KB-Nsx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XGJ-wY-hdx"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BPU-oi-dIK" firstAttribute="leading" secondItem="XGJ-wY-hdx" secondAttribute="leading" id="39r-Z8-FBP"/>
+                <constraint firstItem="BPU-oi-dIK" firstAttribute="top" secondItem="VXV-lF-uFa" secondAttribute="top" constant="10" id="McM-k0-LVC"/>
+                <constraint firstItem="XGJ-wY-hdx" firstAttribute="trailing" secondItem="BPU-oi-dIK" secondAttribute="trailing" id="SqT-eq-KIj"/>
+                <constraint firstItem="XGJ-wY-hdx" firstAttribute="bottom" secondItem="BPU-oi-dIK" secondAttribute="bottom" constant="10" id="fxn-Jh-7qA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-177.45535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
