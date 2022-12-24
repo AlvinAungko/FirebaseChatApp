@@ -1,0 +1,28 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.10)
+  - MarqueeLabel (4.0.5)
+  - NotificationBannerSwift (3.1.0):
+    - MarqueeLabel (~> 4.0.5)
+    - SnapKit (~> 5.0.1)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - NotificationBannerSwift
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  NotificationBannerSwift: 49912a48b37e2f55d1cef4e8a38f15394f66a70a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 8213e2492fc33b08bfcbbef8094f2e2c2e137090
+
+COCOAPODS: 1.11.3
