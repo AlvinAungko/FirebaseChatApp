@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3621ED8BA1AACF31ACD7166E /* Pods_FireBaseChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7C73F9704E72623A3E3F84 /* Pods_FireBaseChatApp.framework */; };
+		E112EE5E2959E5850075AF1A /* ChatConversation+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112EE5D2959E5850075AF1A /* ChatConversation+CollectionView.swift */; };
 		E14C0EFC29573EAA00D69ECD /* ChatConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C0EFA29573EAA00D69ECD /* ChatConversationViewController.swift */; };
 		E14C0EFD29573EAA00D69ECD /* ChatConversationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14C0EFB29573EAA00D69ECD /* ChatConversationViewController.xib */; };
 		E14C0F0129573ECB00D69ECD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C0F0029573ECB00D69ECD /* BaseViewController.swift */; };
@@ -46,6 +47,7 @@
 		1D7C73F9704E72623A3E3F84 /* Pods_FireBaseChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5015AD3CEEC8DE6193A3477E /* Pods-FireBaseChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseChatApp.release.xcconfig"; path = "Target Support Files/Pods-FireBaseChatApp/Pods-FireBaseChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		D6D75CED43F4A57C30CA9000 /* Pods-FireBaseChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseChatApp.debug.xcconfig"; path = "Target Support Files/Pods-FireBaseChatApp/Pods-FireBaseChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E112EE5D2959E5850075AF1A /* ChatConversation+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatConversation+CollectionView.swift"; sourceTree = "<group>"; };
 		E14C0EFA29573EAA00D69ECD /* ChatConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConversationViewController.swift; sourceTree = "<group>"; };
 		E14C0EFB29573EAA00D69ECD /* ChatConversationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatConversationViewController.xib; sourceTree = "<group>"; };
 		E14C0F0029573ECB00D69ECD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E112EE5C2959E5660075AF1A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E14C0EF629573E5800D69ECD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,8 +134,9 @@
 		E14C0EF729573E6F00D69ECD /* ChatConversation */ = {
 			isa = PBXGroup;
 			children = (
-				E14C0EFE29573EAF00D69ECD /* Cell */,
+				E112EE5C2959E5660075AF1A /* Cell */,
 				E14C0EFA29573EAA00D69ECD /* ChatConversationViewController.swift */,
+				E112EE5D2959E5850075AF1A /* ChatConversation+CollectionView.swift */,
 				E14C0EFB29573EAA00D69ECD /* ChatConversationViewController.xib */,
 			);
 			path = ChatConversation;
@@ -146,13 +156,6 @@
 				E14C0F142957452000D69ECD /* View */,
 			);
 			path = Register;
-			sourceTree = "<group>";
-		};
-		E14C0EFE29573EAF00D69ECD /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		E14C0EFF29573EB600D69ECD /* Base */ = {
@@ -182,14 +185,6 @@
 				E14C0F112957450900D69ECD /* LoginViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		E14C0F0C2957427200D69ECD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E14C0F2129574E7200D69ECD /* Register */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E14C0F0D295742D600D69ECD /* Extension */ = {
@@ -229,13 +224,6 @@
 				E14C0F1D2957489B00D69ECD /* HealFlatTextFieldContainer.xib */,
 			);
 			path = HealFlatTextFieldContainer;
-			sourceTree = "<group>";
-		};
-		E14C0F2129574E7200D69ECD /* Register */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Register;
 			sourceTree = "<group>";
 		};
 		E14C0F2229574E7C00D69ECD /* Enum */ = {
@@ -342,7 +330,6 @@
 				E14C0F28295751A400D69ECD /* Utilities */,
 				E14C0F2229574E7C00D69ECD /* Enum */,
 				E14C0F0D295742D600D69ECD /* Extension */,
-				E14C0F0C2957427200D69ECD /* Model */,
 				E14C0F19295747FF00D69ECD /* UIComponents */,
 				E14C0EF629573E5800D69ECD /* Modules */,
 				E14C0F352957690500D69ECD /* SupportingFiles */,
@@ -483,6 +470,7 @@
 				E14C0F2D295751B900D69ECD /* AppFonts.swift in Sources */,
 				E14C0F2F2957525800D69ECD /* AllExtensions.swift in Sources */,
 				E14C0F1F2957489B00D69ECD /* HealFlatTextFieldContainer.swift in Sources */,
+				E112EE5E2959E5850075AF1A /* ChatConversation+CollectionView.swift in Sources */,
 				E14C0F2C295751B900D69ECD /* AppColors.swift in Sources */,
 				E14C0F4629576C0A00D69ECD /* HealPrimaryButton.swift in Sources */,
 				E14C0F272957503200D69ECD /* BaseCustomView.swift in Sources */,

@@ -47,6 +47,7 @@ class LoginViewController: BaseViewController {
         passwordTextView.addAttributes(placeholder: "Password")
         
         loginButton.buttonStyle = .normal
+        loginButton.addTarget(self, action: #selector(handleLoginAction), for: .touchUpInside)
         
         registerButton.buttonStyle = .plain
         registerButton.setTitle("If You Don't have Account, Register Here", for: .normal)
@@ -57,6 +58,11 @@ class LoginViewController: BaseViewController {
     
     @objc func handleRegisterAction() {
         let vc = RegisterViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func handleLoginAction() {
+        let vc = ChatConversationViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
